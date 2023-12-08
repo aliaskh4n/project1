@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>мәтін анализаторы</title>
+    <style>
+        /* tg: @aliaskhan */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .button-container {
+            display: flex;
+            flex-direction: row;
+            margin-bottom: 20px;
+            margin-top: 20px;
+        }
+
+        .container {
+            min-width: 600px;
+            max-width: 600px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        #inputTextForm {
+            display: flex;
+            flex-direction: column;
+            max-width: 100%;
+        }
+
+        #inputText {
+            color: transparent;
+            width: 100%;
+            padding: 10px;
+            margin: 0;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            outline: none;
+            word-wrap: break-word;
+            box-sizing: border-box;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+            overflow-wrap: break-word;
+        }
+
+        #wordCounter {
+            margin-top: 10px;
+            font-size: 14px;
+            text-align: right;
+        }
+
+        .button-container button {
+            margin-left: 20px;
+            margin-right: 20px;
+            width: 65px;
+            height: 65px;
+            padding: 10px;
+            font-size: 30px;
+            background-color: #fff;
+            color: white;
+            border: none;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        #legend {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #555;
+            float: right;
+        }
+
+        #count {
+            font-size: 14px;
+            margin-top: 10px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <button onclick="handleButtonClick(1)">🏠</button>
+        <button onclick="handleButtonClick(2)">📖</button>
+        <button onclick="handleButtonClick(3)">⌨️</button>
+    </div>
+
+    <div class="container">
+        <h1>Дереккөздер</h1>
+        <div id="result"><h4><a href="https://github.com/aliaskh4n">⚙️ Github</a></h4></div>
+    </div>
+
+    <script>
+        function handleButtonClick(buttonNumber) {
+            if (buttonNumber === 1) {
+                window.location.href = '/';
+            } else if (buttonNumber === 2) {
+                window.location.href = '/dictionary';
+            } else if (buttonNumber === 3) {
+                window.location.href = '/sources';
+            }
+        }
+    </script>
+</body>
+</html>
